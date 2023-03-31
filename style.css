@@ -137,7 +137,7 @@ section .text-container .text-box h3{
 footer {
   position: absolute;
   left: 50%;
-  bottom: 0%;
+  bottom: -15%;
   transform: translateX(-50%);
 }
 
