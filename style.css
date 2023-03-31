@@ -98,8 +98,8 @@ section .text-container{
    display: flex;
 }
 section .text-container .text-box{
-  height: 550px;
-  width: 550px;
+  height: 100%;
+  width: 100%;
   margin: 20px;
   padding: 20px;
   background: rgb(255, 255, 254);
@@ -133,3 +133,17 @@ section .text-container .text-box h3{
   transform: translateY(0);
   opacity: 1;
 }
+/* Linkdin Button*/
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translateX(-50%);
+}
+
+.linkedin-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Linkdin Button end*/
