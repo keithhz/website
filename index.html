@@ -1,56 +1,147 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="js.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content= "width=device-width, initial-scale=1">
-        <title>Developed by Keith Zheng</title>
-    </head>
-    <section>
-        <h1 style="font-size:70px;">Welcome To My Website!
-         <br> <p style="font-size: 30px;">by Keith Zheng</p>
-        </h1>
-      </section>
-      <section>
-        <div class="container reveal">
-          <h2>Hi There!</h2>
-          <div class="text-container">
-            <div class="text-box">
-              <h3><u>About Me</u></h3>
-              <p style="font-size: 25px;">
-                Hi my name is Keith Zheng. Im currently a junior at UMBC majoring in Information Systems.  I've created and put together this website for the purpose of trying and learning HTML, CSS and Javascript. My end goal with this website is to get a deep understanding on how these languages build and mesh together.
-              </p> <br>
-              <h3 ><u>About This Website</u></h3>
-              <p style="font-size: 25px;">What I hoped to accompish from creating/ putting together this website was to futher my understanding of HTML, CSS and, Javascript. I wanted to mess around/ observe how each language intertwines and impact each other.</p>
-            </div>
-          <div class="text-box">
-            <h3> <u>W.I.P Certifications</u></h3>
-            <p style="font-size: 25px;">
-              Certifications I am hoping to obtain are (and not limited too): <p> </p><br> </p> 
-              <div class = "text"><l
-                <label ><input type="checkbox" name="CISCO"> CISCO Introduction to Cybersecurity</label> <br><br>
-                <label ><input type="checkbox" name="Google UX Certification"> Google UX Certification</label> <br><br>
-                <label ><input type="checkbox" name="Amazon Cloud Practioner Certification"> Amazon Cloud Practioner Certification</label><br /><br>
-                <label ><input type="checkbox" name="Amazon Developer"> Amazon Developer Certification</label><br/><br>
-                <label ><input type="checkbox" name="Amazon Database Certification"> Amazon Database Certification</label><br/> <br>
-              </div>
-              <footer>
-          <a href="https://www.linkedin.com/in/keithzhengg" target="_blank">
-            <img src="linkedin-flat.png" alt="LinkedIn Profile" class="linkedin-icon"> 
-          </a>
-        </footer> 
-          </div>
-          <div class="text-box">
-            <h3><u>My Resume</u></h3>
-              <p>
-                <iframe id="myPDF" src="K Zheng Resume 2023.pdf" width="500" height="450"></iframe>
-              </p>
-          </div> 
-          </div>
-          </div>
-        </div>
-         
-      </section>
-    <body>
-    
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: rgb(250, 250, 250);
+    color: rgb(71, 71, 71);
+}
+
+h3 {
+    margin: 16px 0;
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+
+h4 {
+    color: rgb(37, 34, 34);
+    margin: 16px 0;
+    border-left: 5px solid red;
+    padding-left: 16px;
+}
+
+
+
+h1 {
+    color: rgb(37, 34, 34);
+    margin: 16px 0;
+    border-left: 5px solid red;
+    padding-left: 16px;
+}
+
+
+body {
+	background: linear-gradient(-45deg,rgb(111, 111, 202), rgba(175, 80, 80, 0.473), rgb(190, 189, 188), #805968);
+	background-size: 400% 400%;
+	animation: gradient 14s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+section .text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #fff5e0;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background: rgb(230, 245, 233)
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background: rgb(255, 255, 254);
+}
+section .text-container .text-box h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+/* Linkdin Button*/
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translateX(-50%);
+}
+
+.linkedin-icon {
+  width: 55px;
+  height: 55px;
+}
